@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JSON 解析</title>
+  <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <img src="./images/icon.png">
+      <span>JSON 解析</span>
+    </div>
+    <div class="main">
+      <div class="left-textarea">
+        <textarea id="content" placeholder="请输入JSON字符串"></textarea>
+      </div>
+      <div class="divider"></div>
+      <div class="right-result">
+        <div class="begin-mark">
+          <span>{</span>
+          <span>[</span>
+        </div>
+        <div id="result"></div>
+        <div class="end-mark">
+          <span>}</span>
+          <span>]</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="./libs/jquery.min.js"></script>
+<script src="./index.js"></script>
+</html>
