@@ -1,3 +1,17 @@
+// 模拟数据
+const mockData = {
+  "id": 1,
+  "age": 12,
+  "name": "张三",
+  "hobby": ["电影", "游戏", "音乐"],
+  "family": [
+    { "id": 2, "relation": "爸爸", "age": 36 },
+    { "id": 3, "relation": "妈妈", "age": 36 }
+  ],
+  "address": "",
+  "marriage": null
+};
+
 // 常量
 const resultContainer = document.getElementById("result"); // 转换之后的结果区域
 const allNumberReg = /^\d+$/g; // 判断是否全部为数字的正则
@@ -5,6 +19,10 @@ const allNumberReg = /^\d+$/g; // 判断是否全部为数字的正则
 // 初始化函数
 $(function () {
   pageInit();
+
+  // Mock 演示效果，设置默认的数据
+  $("#content").val(JSON.stringify(mockData));
+  $("#content").trigger("keyup");
 });
 
 // 初始化函数
